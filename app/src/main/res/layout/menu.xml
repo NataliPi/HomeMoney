@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </LinearLayout>
+    
+        <TextView
+            android:id="@+id/last_spendings"
+            android:text="@string/last_spendings"
+            style="@style/menuItem" />
+
+        <TextView
+            android:id="@+id/planned_spendings"
+            android:text="@string/planned_spendings"
+            style="@style/menuItem" />
+        <TextView
+            android:id="@+id/budget"
+            android:text="@string/budget"
+            style="@style/menuItem" />
+        <TextView
+            android:id="@+id/statistics"
+            android:text="@string/statistics"
+            style="@style/menuItem" />
+        <TextView
+            android:id="@+id/search"
+            android:text="@string/search"
+            style="@style/menuItem"
+            />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightGray"/>
+    <TextView
+            android:id="@+id/familySettings"
+            android:text="@string/manage_accounts"
+            style="@style/menuItem" />
+</LinearLayout>

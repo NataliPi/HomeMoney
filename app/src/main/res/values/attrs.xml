@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DropdownView">
+        <!-- Child view of this layout will be rotated by this angle. -->
+        <attr name="isDatePicker" format="boolean"/>
+        <attr name="dialogButtonStyle" format="integer|reference"/>
+    </declare-styleable>
+    <declare-styleable name="PieChart">
+        <attr name="centerImage" format="integer|reference"/>
+        <attr name="textColor" format="integer|reference"/>
+        <attr name="textSize" format="integer"/>
+    </declare-styleable>
+</resources>

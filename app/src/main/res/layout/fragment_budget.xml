@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingRight="@dimen/standard_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/yellow_circle"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Баланс"
+                        android:textColor="@color/darkViolet"
+                        android:textSize="@dimen/text_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/balance"
+                        android:text="до конца месяца"
+                        android:textColor="@color/darkViolet"
+                        android:textSize="@dimen/text_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yellow_circle"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/yellow_circle"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/balanceMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="475"
+                        android:textColor="@color/darkViolet"
+                        android:textSize="@dimen/text_big"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/balanceCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="грн"
+                        android:textColor="@color/darkViolet"
+                        android:textSize="@dimen/text_big"  />
+                    <TextView
+                        android:id="@+id/balanceError"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/budget_error"
+                        android:textColor="@color/darkViolet"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:textSize="@dimen/text_small"
+                        android:visibility="gone"
+                       />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:background="@color/darkViolet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginTop="10dp"
+                android:text="Запланированный бюджет"
+                android:textColor="@color/darkViolet"
+                android:textSize="@dimen/text_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow">
+
+                <ImageView
+                    android:id="@+id/pen"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/pen" />
+
+                <TextView
+                    android:id="@+id/planned_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingTop="8dp"
+                    android:text="20000 грн"
+                    android:textColor="@color/darkViolet"
+                    android:textSize="@dimen/text_big" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginTop="10dp"                android:text="Потраченные средства"
+                android:textColor="@color/darkViolet"
+                android:textSize="@dimen/text_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow">
+
+                <TextView
+                    android:id="@+id/spendedMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingTop="8dp"
+                    android:text="15245 грн"
+                    android:textColor="@color/darkViolet"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginTop="10dp"                android:text="Запланированные траты"
+                android:textColor="@color/darkViolet"
+                android:textSize="@dimen/text_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow">
+
+                <TextView
+                    android:id="@+id/planedSpendings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingTop="8dp"
+                    android:text="3100 грн"
+                    android:textColor="@color/darkViolet"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

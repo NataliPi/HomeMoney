@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/familyPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/side_bg"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/side_nav_bar" />
+
+        <LinearLayout
+            android:id="@+id/side_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/whitephoto"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:src="@drawable/whitephoto" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/family_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_medium" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:paddingBottom="@dimen/half_margin"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingTop="@dimen/half_margin"
+        android:text="@string/family_profile_settings"
+        android:textColor="@color/darkViolet"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/addToFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:paddingBottom="@dimen/half_margin"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingTop="@dimen/half_margin"
+        android:text="@string/add_to_family"
+        android:textColor="@color/darkViolet"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/joinToFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="@dimen/half_margin"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingTop="@dimen/half_margin"
+        android:text="@string/join_family"
+        android:textColor="@color/darkViolet"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/deleteFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="@dimen/half_margin"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingTop="@dimen/half_margin"
+        android:text="@string/delete_from_family"
+        android:textColor="@color/darkViolet"
+        android:textSize="@dimen/text_medium" />
+</LinearLayout>

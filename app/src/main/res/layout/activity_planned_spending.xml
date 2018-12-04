@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dateText1"
+                    android:text="ОктябЫрь1"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText2"
+                    android:text="ОктябЫрь2"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText3"
+                    android:text="ОктябЫрь3"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText4"
+                    android:text="ОктябЫрь4"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText5"
+                    android:text="ОктябЫрь5"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText6"
+                    android:text="ОктябЫрь6"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText7"
+                    android:text="ОктябЫрь7"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText8"
+                    android:text="ОктябЫрь8"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText9"
+                    android:text="ОктябЫрь9"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText10"
+                    android:text="ОктябЫрь10"
+                    style="@style/dateLabel" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"/>
+                <TextView
+                    android:id="@+id/dateText11"
+                    android:text="ОктябЫрь11"
+                    style="@style/dateLabel" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/dateLabel"
+            android:text="ОктябЫрь"
+            style="@style/dateLabel" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+<RelativeLayout
+    android:id="@+id/holder"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/health"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/health"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/edit"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/darkViolet"
+        android:layout_toRightOf="@+id/icon"/>
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:src="@drawable/pen"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/delete"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:src="@drawable/delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+</LinearLayout>
